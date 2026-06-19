@@ -8,6 +8,7 @@ import paymentRoutes from '../modules/payments/payment.routes.js';
 import reviewRoutes from '../modules/reviews/review.routes.js';
 import promoRoutes from '../modules/promotions/promo.routes.js';
 import cuisineRoutes from '../modules/cuisines/cuisine.routes.js';
+import searchRoutes from '../modules/search/search.routes.js';
 import uploadRoutes from '../modules/uploads/upload.routes.js';
 
 const router = Router();
@@ -15,6 +16,7 @@ const router = Router();
 router.use('/auth', authRoutes);
 router.use('/users', userRoutes);
 router.use('/cuisines', cuisineRoutes);
+router.use('/search', searchRoutes);
 router.use('/restaurants', restaurantRoutes);
 router.use('/orders', orderRoutes);
 router.use('/payments', paymentRoutes);

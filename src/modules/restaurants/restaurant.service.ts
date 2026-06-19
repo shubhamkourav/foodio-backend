@@ -10,7 +10,7 @@ import {
 } from '../../utils/estimateDeliveryTime.js';
 import { UPLOAD_FOLDERS, uploadImageToCloudinary } from '../../utils/cloudinaryUpload.js';
 
-function formatRestaurant(
+export function formatRestaurant(
   restaurant: {
     _id: { toString(): string };
     location: { coordinates: [number, number] };
